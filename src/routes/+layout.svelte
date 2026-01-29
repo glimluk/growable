@@ -9,8 +9,9 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<main class="p-4">
+<main class="m-auto grid justify-center p-4">
 	{@render children()}
+
 	<div style="display:none">
 		{#each locales as locale}
 			<a href={localizeHref(page.url.pathname, { locale })}>
@@ -19,9 +20,3 @@
 		{/each}
 	</div>
 </main>
-
-<!-- <style lang="scss">
-	main {
-		padding: 20px;
-	}
-</style> -->
