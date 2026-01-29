@@ -1,1 +1,0 @@
-install postgres latest
